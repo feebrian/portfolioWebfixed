@@ -55,7 +55,15 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.7rem;
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+.logo:hover {
   color: var(--main-color);
+  background: var(--bg-color);
+  transition: 0.3s all linear;
 }
 .navbar {
   display: flex;
@@ -106,7 +114,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 .home-content {
   position: relative;
@@ -119,16 +127,16 @@ header {
   justify-content: center;
 }
 .home-img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: #f1ab41;
   overflow: hidden;
   margin-bottom: 2rem;
 }
 .home-img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   object-position: center;
 }
@@ -233,9 +241,13 @@ header {
 }
 .about-text p {
   font-size: 0.938rem;
+  font-weight: 500;
   letter-spacing: 1px;
   text-align: justify;
   margin-bottom: 1.5rem;
+}
+.about-text .pg-1 {
+  margin-top: 2.25rem;
 }
 /* Skill */
 .skill-content {
@@ -251,4 +263,65 @@ header {
   padding: 15px;
   background: var(--container-color);
   border-radius: 0.4rem;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.skill-box:hover {
+  transform: scale(1.05);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.skill-box .bx {
+  font-size: 1.4rem;
+  padding: 10px;
+  color: var(--main-color);
+  border-radius: 5rem;
+  border: 2px dashed var(--bg-color);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.skill-box h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  color: var(--main-color);
+}
+/* Experience */
+.experience-data-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  background: var(--container-color);
+  border-radius: 0.4rem;
+}
+.experience-data-box .color {
+  color: var(--main-color);
+}
+.experience-data-box h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.experience-data-box p {
+  font-size: 0.94rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+.projects-milestone {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 1rem;
+  justify-content: center;
+}
+.projects-milestone-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background: var(--container-color);
+  border-radius: 0.4rem;
+}
+.projects-milestone-box span {
+  font-size: 0.94rem;
 }
