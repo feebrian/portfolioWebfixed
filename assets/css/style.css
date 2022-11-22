@@ -14,7 +14,7 @@
   --body-color: #101820;
   --container-color: #192838;
   --heading-color: #1e2938;
-  --box-color: ;
+  --box-color: #182430;
   --bg-color: #fff;
 }
 body {
@@ -45,7 +45,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #182430;
+  transition: 0.5s all ease;
+}
+.header-active {
+  background: var(--box-color);
+  transition: 0.5s all ease;
 }
 .nav {
   display: flex;
@@ -55,6 +59,7 @@ header {
 }
 .logo {
   font-size: 1.2rem;
+  font-family: Poppins;
   font-weight: 600;
   color: var(--main-color);
 }
@@ -111,7 +116,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 .home-content {
   position: relative;
@@ -323,7 +328,7 @@ header {
 }
 .projects-milestone {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-content: center;
 }
@@ -436,15 +441,13 @@ footer {
 }
 .footer-link {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(2, 150px);
+  gap: 1.5rem;
   justify-content: end;
+  margin: 1.5rem 0;
 }
 .link-box .color {
   color: var(--main-color);
-}
-.link-box h3 {
-  padding: 0.1rem 0.4rem;
 }
 .foot-link {
   color: var(--bg-color);
@@ -482,5 +485,134 @@ footer {
   }
   .nav {
     padding: 14px 0;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .experience-data-box h2 {
+    font-size: 1.9rem;
+  }
+  .experience-data-box p {
+    font-size: 0.85rem;
+  }
+  .projects-box {
+    height: 280px;
+  }
+}
+@media (max-width: 775px) {
+  .nav {
+    padding: 10px 0;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .home-img {
+    width: 165px;
+    height: 165px;
+  }
+  .home-img {
+    width: 165px;
+    height: 165px;
+  }
+  .home-text h2 {
+    font-size: 3rem;
+  }
+  .home-text p {
+    font-size: 1.04rem;
+  }
+  .about-data span {
+    font-size: 0.93rem;
+  }
+  .about-data h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin: 0.9rem 0;
+  }
+  .about-text p {
+    font-size: 0.897rem;
+    margin-bottom: 1.1rem;
+  }
+  .btn {
+    font-size: 0.87rem;
+  }
+  .skill-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .open-menu {
+    right: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .nav-link {
+    display: block;
+    margin: 1rem 0;
+  }
+  .foot-heading {
+    font-size: 2.5rem;
+  }
+  .footer-copyright span {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 685px) {
+  .heading {
+    font-size: 3.2rem;
+  }
+  .about-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-milestone {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .projects-box {
+    height: 260px;
+  }
+  .footer-content {
+    flex-direction: column;
+    justify-content: end;
+  }
+  .footer-link {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: start;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .skill-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-milestone {
+    grid-template-columns: repeat(1, 200px);
+  }
+  .projects-box {
+    height: 210px;
+  }
+}
+@media (max-width: 350px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .projects-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-copyright span {
+    font-size: 0.8rem;
   }
 }
