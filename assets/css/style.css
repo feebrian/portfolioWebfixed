@@ -45,6 +45,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  background: #182430;
 }
 .nav {
   display: flex;
@@ -55,20 +56,16 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.1rem 0.8rem;
-  border-radius: 0.7rem;
-  color: var(--bg-color);
-  background: var(--main-color);
+  color: var(--main-color);
 }
 .logo:hover {
   color: var(--main-color);
-  background: var(--bg-color);
-  transition: 0.3s all linear;
 }
 .navbar {
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  margin-bottom: 0;
 }
 .nav-link {
   font-size: 0.94rem;
@@ -114,7 +111,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 .home-content {
   position: relative;
@@ -204,8 +201,9 @@ header {
 }
 /* Heading */
 .heading {
+  font-family: Poppins;
   font-size: 5rem;
-  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--heading-color);
   text-align: center;
@@ -238,6 +236,9 @@ header {
   padding: 12px 16px;
   border-radius: 0.4rem;
   margin-top: 1rem;
+}
+.btn:hover {
+  background: var(--main-color);
 }
 .about-text p {
   font-size: 0.938rem;
@@ -294,12 +295,25 @@ header {
   background: var(--container-color);
   border-radius: 0.4rem;
 }
+.experience-data-box .bx {
+  font-size: 3rem;
+  background: #17212b;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.experience-data-box .bx:hover {
+  background: #e88f1a;
+  transition: 0.3s all linear;
+  transform: rotate(-25deg) scale(1.05);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .experience-data-box .color {
   color: var(--main-color);
 }
 .experience-data-box h2 {
   font-size: 2rem;
-  margin: 0.5rem 0;
+  margin: 0.15rem 0 0.5rem;
 }
 .experience-data-box p {
   font-size: 0.94rem;
@@ -324,4 +338,138 @@ header {
 }
 .projects-milestone-box span {
   font-size: 0.94rem;
+}
+/* Projects */
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.projects-box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.project-overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: hsl(234, 45%, 16%, 0.7);
+}
+.project-overlay .bx {
+  color: var(--bg-color);
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 2.7rem;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.project-overlay .bx:hover {
+  transform: rotate(-15deg) scale(1.05);
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.projects-box:hover .project-overlay{
+  top: 0;
+  transition: 0.5s all ease 0s;
+}
+/* Contact */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 0.8rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--bg-color);
+  background: var(--container-color);
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+}
+.contact-form .send-btn {
+  width: 115px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #e88f1a;
+  cursor: pointer;
+}
+.contact-form .send-btn:hover {
+  background: #e6962d;
+}
+/* Footer */
+footer {
+  background: var(--container-color);
+  padding: 3rem 0 1rem;
+  margin-top: 7rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.foot-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1.2rem 0;
+  color: var(--bg-color);
+}
+.foot-heading:hover {
+  color: var(--bg-color);
+}
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  justify-content: end;
+}
+.link-box .color {
+  color: var(--main-color);
+}
+.link-box h3 {
+  padding: 0.1rem 0.4rem;
+}
+.foot-link {
+  color: var(--bg-color);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.4rem;
+}
+.foot-link:hover {
+  color: var(--main-color);
+  background: #182430;
+  transition: 0.3s all linear;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.footer-copyright .color {
+  color: var(--main-color);
+}
+
+/* =============
+#Responsive
+================ */
+@media screen {
+  
 }

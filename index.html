@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
 
+    <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -75,7 +76,9 @@
             Web Developer,<br />
             Web Designer & Cyber Security
           </h2>
-          <a href="#" class="btn">Download Cv<i class="bx bx-download"></i></a>
+          <a href="#" download="AdamFebrianCV" class="btn"
+            >Download Cv<i class="bx bx-download"></i
+          ></a>
         </div>
         <div class="about-text">
           <p class="pg-1">
@@ -131,6 +134,7 @@
       <!-- Experience Content -->
       <div class="experience-content">
         <div class="experience-data-box">
+          <i class="bx bx-code-alt"></i>
           <h2>Coding,<span class="color"> Coding</span>, and Coding</h2>
           <p>
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sit
@@ -141,6 +145,11 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
             corporis, incidunt sint molestias consectetur blanditiis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ex
+            molestiae quos laboriosam vero cumque magnam doloremque dolore
+            nostrum, repellendus expedita dolor animi earum. Tempore?
           </p>
         </div>
         <div class="projects-milestone">
@@ -166,8 +175,57 @@
       <h2 class="heading">Projects</h2>
       <!-- Projects Content -->
       <div class="projects-content">
-        <div class="projects-img">
-          <img src="" />
+        <div class="projects-box">
+          <img
+            src="assets/img/projects-img/project-1.jpg"
+            alt="project-1"
+            class="project-img"
+          />
+          <!-- Overlay -->
+          <div class="project-overlay">
+            <a href="#">
+              <i class="bx bxs-folder-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img
+            src="assets/img/projects-img/project-2.jpg"
+            alt="project-2"
+            class="project-img"
+          />
+          <!-- Overlay -->
+          <div class="project-overlay">
+            <a href="#">
+              <i class="bx bxs-folder-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img
+            src="assets/img/projects-img/project-3.jpg"
+            alt="project-3"
+            class="project-img"
+          />
+          <!-- Overlay -->
+          <div class="project-overlay">
+            <a href="#">
+              <i class="bx bxs-folder-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img
+            src="assets/img/projects-img/project-4.jpg"
+            alt="project-4"
+            class="project-img"
+          />
+          <!-- Overlay -->
+          <div class="project-overlay">
+            <a href="#">
+              <i class="bx bxs-folder-plus"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -177,8 +235,50 @@
       <!-- Heading -->
       <h2 class="heading">Contact</h2>
       <!-- Contact Form -->
-      <div class="contact-form"></div>
+      <form action="#" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Full Name" class="name">
+        <input type="email" placeholder="Email Address" class="email">
+        <textarea name="message" cols="30" rows="10" placeholder="Message here..."></textarea>
+        <input type="submit" value="Send" class="send-btn">
+      </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer container" id="footer">
+        <div class="footer-content">
+          <!-- Footer Heading -->
+          <div class="footer-heading">
+            <a href="#home" class="foot-heading">Adam Febrian</a>
+          </div>
+          <!-- Footer Link -->
+          <div class="footer-link">
+            <div class="link-box">
+              <ul>
+                <h2><span class="color">Useful</span> Links</h2>
+                <li><a href="#home" class="foot-link">Home</a></li>
+                <li><a href="#skill" class="foot-link">Skill</a></li>
+                <li><a href="#experience" class="foot-link">Experience</a></li>
+                <li><a href="#projects" class="foot-link">Projects</a></li>
+                <li><a href="#contact" class="foot-link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="link-box">
+              <ul>
+                <li><h2><span class="color">Social</span> Links</h2></li>
+                <li><a href="#" class="foot-link">Instagram</a></li>
+                <li><a href="#" class="foot-link">Twitter</a></li>
+                <li><a href="#" class="foot-link">Github</a></li>
+                <li><a href="#" class="foot-link">Discord</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>Copyright 2022 | Built by <a href="#"><span class="color">Adam Febrian</span></a></span>
+        </div>
+      </div>
+    </footer>
 
     <!-- Link To Js -->
     <script src="assets/js/main.js"></script>
