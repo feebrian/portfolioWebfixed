@@ -382,7 +382,7 @@ header {
   transform: rotate(-15deg) scale(1.05);
   transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.projects-box:hover .project-overlay{
+.projects-box:hover .project-overlay {
   top: 0;
   transition: 0.5s all ease 0s;
 }
@@ -436,7 +436,7 @@ footer {
 }
 .footer-link {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-content: end;
 }
@@ -470,6 +470,17 @@ footer {
 /* =============
 #Responsive
 ================ */
-@media screen {
-  
+@media (max-width: 990px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 892px) {
+  section {
+    padding: 2rem 0 2rem;
+  }
+  .nav {
+    padding: 14px 0;
+  }
 }
