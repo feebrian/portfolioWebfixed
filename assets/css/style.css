@@ -188,6 +188,9 @@ header {
 .home-text .color {
   color: var(--main-color);
 }
+.home-text .color a{
+  color: var(--main-color);
+}
 .social {
   display: flex;
   align-items: center;
